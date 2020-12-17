@@ -6,7 +6,10 @@ req.onreadystatechange = function (e) {
       document.querySelector('#root').innerHTML += `<tr><td>${item.id}</td>
         <td>${item.name}</td>
         <td>${item.username}</td>
-        <td>${item.email}</td><tr>`;
+        <td>${item.email}</td>
+        <td colspan=2><button class="btn btn-warning">Modify</button>
+        <button class="btn btn-danger">Delete</button></td>
+       <tr>`;
     });
   }
 };
